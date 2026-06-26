@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alex Chen - Top Rated Web Developer on SkillGrid. Expert in React, Next.js, Vue.js and modern web technologies.">
+    <meta name="theme-color" content="#0f0f23">
+
+    <title>Alex Chen — Web Developer | SkillGrid</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="seller-services.html" class="nav-link">Seller Services</a>
+                <a href="seller-profile.html" class="nav-link active">Seller Profile</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ SELLER PROFILE HERO ============ -->
+    <section class="seller-hero">
+        <div class="seller-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692?w=1920&q=80&fm=webp'); background-size: cover; background-position: center;"></div>
+        <div class="seller-hero-overlay"></div>
+        <div class="container">
+            <div class="breadcrumb breadcrumb-page reveal">
+                <a href="../index.html">Home</a>
+                <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                <a href="services.html">Services</a>
+                <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                <span class="cur">Seller Profile</span>
+            </div>
+            <div class="seller-profile-card reveal">
+                <div class="seller-profile-header">
+                    <div class="seller-avatar-large">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Alex Chen">
+                        <div class="seller-online-status"></div>
+                    </div>
+                    <div class="seller-info-main">
+                        <div class="seller-badge-row">
+                            <span class="seller-verified-badge">
+                                <i class="fas fa-check-circle"></i> Verified
+                            </span>
+                            <span class="seller-top-rated-badge">Top Rated</span>
+                        </div>
+                        <h1 class="seller-name">Alex Chen</h1>
+                        <p class="seller-title">Senior Web Developer & UI/UX Specialist</p>
+                        <div class="seller-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                            <span class="seller-timezone">(PST - UTC-8)</span>
+                        </div>
+                        <div class="seller-stats-row">
+                            <div class="seller-stat">
+                                <span class="stat-value">4.9</span>
+                                <span class="stat-label"><i class="fas fa-star"></i> Rating</span>
+                            </div>
+                            <div class="seller-stat">
+                                <span class="stat-value">98%</span>
+                                <span class="stat-label">Response Rate</span>
+                            </div>
+                            <div class="seller-stat">
+                                <span class="stat-value">< 2h</span>
+                                <span class="stat-label">Response Time</span>
+                            </div>
+                            <div class="seller-stat">
+                                <span class="stat-value">156</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seller-actions-main">
+                        <button class="btn btn-primary btn-lg" id="contactSellerBtn">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </button>
+                        <button class="btn btn-outline btn-lg" id="shareProfileBtn">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SELLER CONTENT ============ -->
+    <section class="seller-content">
+        <div class="container">
+            <div class="seller-grid">
+
+                <!-- Left Column - Main Content -->
+                <div class="seller-main-col">
+
+                    <!-- About Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-user"></i> About Me</h2>
+                        <div class="seller-about-text">
+                            <p>I'm a passionate web developer with over 8 years of experience building modern, responsive, and user-friendly websites and web applications. I specialize in React, Next.js, Vue.js, and modern JavaScript frameworks.</p>
+                            <p>My goal is to transform your ideas into digital reality. Whether you need a simple landing page or a complex web application, I deliver clean, maintainable code that scales with your business.</p>
+                            <p>I believe in transparent communication, meeting deadlines, and exceeding expectations. Every project I take on receives my full attention and dedication to quality.</p>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-code"></i> Skills & Expertise</h2>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Frontend Development</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Next.js</span>
+                                    <span class="skill-tag">Vue.js</span>
+                                    <span class="skill-tag">TypeScript</span>
+                                    <span class="skill-tag">Tailwind CSS</span>
+                                    <span class="skill-tag">SASS/SCSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Backend Development</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Node.js</span>
+                                    <span class="skill-tag">Express</span>
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Django</span>
+                                    <span class="skill-tag">PostgreSQL</span>
+                                    <span class="skill-tag">MongoDB</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Tools & Platforms</h3>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Git</span>
+                                    <span class="skill-tag">Docker</span>
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Vercel</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">WordPress</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-progress">
+                            <div class="skill-progress-item">
+                                <div class="skill-progress-header">
+                                    <span>Frontend Development</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress-fill" style="width: 98%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-progress-header">
+                                    <span>Backend Development</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill-progress-item">
+                                <div class="skill-progress-header">
+                                    <span>UI/UX Design</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-progress-bar">
+                                    <div class="skill-progress-fill" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-briefcase"></i> Work Experience</h2>
+                        <div class="experience-timeline">
+                            <div class="experience-item">
+                                <div class="experience-period">2020 - Present</div>
+                                <div class="experience-content">
+                                    <h3>Senior Frontend Developer</h3>
+                                    <p class="experience-company">TechCorp Solutions</p>
+                                    <p class="experience-desc">Leading frontend development team, architecting scalable web applications, and mentoring junior developers.</p>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <div class="experience-period">2018 - 2020</div>
+                                <div class="experience-content">
+                                    <h3>Full Stack Developer</h3>
+                                    <p class="experience-company">Digital Agency Pro</p>
+                                    <p class="experience-desc">Developed custom web solutions for Fortune 500 clients, implemented CI/CD pipelines, and optimized application performance.</p>
+                                </div>
+                            </div>
+                            <div class="experience-item">
+                                <div class="experience-period">2016 - 2018</div>
+                                <div class="experience-content">
+                                    <h3>Junior Web Developer</h3>
+                                    <p class="experience-company">StartupXYZ</p>
+                                    <p class="experience-desc">Built responsive websites, collaborated with design team, and maintained client-facing applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-graduation-cap"></i> Education</h2>
+                        <div class="education-list">
+                            <div class="education-item">
+                                <div class="education-icon"><i class="fas fa-university"></i></div>
+                                <div class="education-content">
+                                    <h3>Master of Computer Science</h3>
+                                    <p class="education-school">Stanford University, 2016</p>
+                                    <p class="education-desc">Specialized in Web Technologies and Human-Computer Interaction</p>
+                                </div>
+                            </div>
+                            <div class="education-item">
+                                <div class="education-icon"><i class="fas fa-university"></i></div>
+                                <div class="education-content">
+                                    <h3>Bachelor of Software Engineering</h3>
+                                    <p class="education-school">UC Berkeley, 2014</p>
+                                    <p class="education-desc">Dean's List, Minor in Business Administration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-images"></i> Portfolio</h2>
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-commerce Platform">
+                                    <div class="portfolio-overlay">
+                                        <h3>E-commerce Platform</h3>
+                                        <p>React, Node.js, MongoDB</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics Dashboard">
+                                    <div class="portfolio-overlay">
+                                        <h3>Analytics Dashboard</h3>
+                                        <p>Vue.js, D3.js, Python</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop" alt="SaaS Application">
+                                    <div class="portfolio-overlay">
+                                        <h3>SaaS Application</h3>
+                                        <p>Next.js, TypeScript, PostgreSQL</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&h=400&fit=crop" alt="Mobile Banking App">
+                                    <div class="portfolio-overlay">
+                                        <h3>Mobile Banking App</h3>
+                                        <p>React Native, Firebase</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&h=400&fit=crop" alt="Corporate Website">
+                                    <div class="portfolio-overlay">
+                                        <h3>Corporate Website</h3>
+                                        <p>WordPress, Custom Theme</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop" alt="Social Media App">
+                                    <div class="portfolio-overlay">
+                                        <h3>Social Media App</h3>
+                                        <p>React, GraphQL, AWS</p>
+                                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Section -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-certificate"></i> Certifications</h2>
+                        <div class="certifications-grid">
+                            <div class="certification-item">
+                                <i class="fab fa-aws"></i>
+                                <div class="cert-info">
+                                    <h3>AWS Certified Developer</h3>
+                                    <p>Amazon Web Services, 2023</p>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fab fa-google"></i>
+                                <div class="cert-info">
+                                    <h3>Google UX Design Certificate</h3>
+                                    <p>Coursera, 2022</p>
+                                </div>
+                            </div>
+                            <div class="certification-item">
+                                <i class="fab fa-react"></i>
+                                <div class="cert-info">
+                                    <h3>Meta Frontend Developer</h3>
+                                    <p>Coursera, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Preview -->
+                    <div class="seller-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-star"></i> Client Reviews</h2>
+                        <div class="reviews-preview">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="https://i.pravatar.cc/50?img=32" alt="Sarah Johnson">
+                                        <div>
+                                            <h4>Sarah Johnson</h4>
+                                            <p>CEO, TechStart Inc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Alex delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and problem-solving skills are outstanding. Highly recommended!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-link"></i> E-commerce Platform Project
+                                </div>
+                            </div>
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <img src="https://i.pravatar.cc/50?img=45" alt="Michael Brown">
+                                        <div>
+                                            <h4>Michael Brown</h4>
+                                            <p>Product Manager, InnovateCo</p>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Working with Alex was a fantastic experience. He understood our requirements perfectly and delivered a beautiful, functional website on time. Will definitely hire again!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-link"></i> Corporate Website Redesign
+                                </div>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="view-all-reviews">
+                            View All 47 Reviews <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column - Sidebar -->
+                <div class="seller-sidebar-col">
+
+                    <!-- Quick Stats Card -->
+                    <div class="sidebar-card reveal">
+                        <h3 class="sidebar-card-title">Quick Stats</h3>
+                        <div class="sidebar-stats">
+                            <div class="sidebar-stat">
+                                <span class="sidebar-stat-icon"><i class="fas fa-calendar-check"></i></span>
+                                <div>
+                                    <span class="sidebar-stat-value">8+ Years</span>
+                                    <span class="sidebar-stat-label">Experience</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="sidebar-stat-icon"><i class="fas fa-project-diagram"></i></span>
+                                <div>
+                                    <span class="sidebar-stat-value">156</span>
+                                    <span class="sidebar-stat-label">Projects Done</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="sidebar-stat-icon"><i class="fas fa-smile"></i></span>
+                                <div>
+                                    <span class="sidebar-stat-value">152</span>
+                                    <span class="sidebar-stat-label">Happy Clients</span>
+                                </div>
+                            </div>
+                            <div class="sidebar-stat">
+                                <span class="sidebar-stat-icon"><i class="fas fa-redo"></i></span>
+                                <div>
+                                    <span class="sidebar-stat-value">98%</span>
+                                    <span class="sidebar-stat-label">Repeat Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages Card -->
+                    <div class="sidebar-card reveal">
+                        <h3 class="sidebar-card-title">Languages</h3>
+                        <div class="languages-list">
+                            <div class="language-item">
+                                <span class="lang-name">English</span>
+                                <span class="lang-level">Native</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="lang-name">Mandarin</span>
+                                <span class="lang-level">Fluent</span>
+                            </div>
+                            <div class="language-item">
+                                <span class="lang-name">Spanish</span>
+                                <span class="lang-level">Basic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Availability Card -->
+                    <div class="sidebar-card reveal">
+                        <h3 class="sidebar-card-title">Availability</h3>
+                        <div class="availability-status">
+                            <div class="avail-badge avail-available">
+                                <i class="fas fa-circle"></i> Available for Work
+                            </div>
+                        </div>
+                        <div class="avail-hours">
+                            <p><i class="fas fa-clock"></i> <strong>40+ hrs/week</strong> available</p>
+                            <p><i class="fas fa-bolt"></i> Usually responds within 2 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- My Services Card -->
+                    <div class="sidebar-card reveal">
+                        <h3 class="sidebar-card-title">My Services</h3>
+                        <div class="sidebar-services">
+                            <a href="service-details.html" class="sidebar-service-item">
+                                <div class="service-thumb">
+                                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=100&h=100&fit=crop" alt="Web Development">
+                                </div>
+                                <div class="service-thumb-info">
+                                    <h4>Web Development</h4>
+                                    <p>Starting at $45</p>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="service-details.html" class="sidebar-service-item">
+                                <div class="service-thumb">
+                                    <img src="https://images.unsplash.com/photo-1561070791-36c11767b26a?w=100&h=100&fit=crop" alt="UI/UX Design">
+                                </div>
+                                <div class="service-thumb-info">
+                                    <h4>UI/UX Design</h4>
+                                    <p>Starting at $75</p>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <a href="service-details.html" class="sidebar-service-item">
+                                <div class="service-thumb">
+                                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=100&h=100&fit=crop" alt="WordPress Development">
+                                </div>
+                                <div class="service-thumb-info">
+                                    <h4>WordPress Dev</h4>
+                                    <p>Starting at $35</p>
+                                </div>
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="sidebar-card reveal">
+                        <h3 class="sidebar-card-title">Send a Message</h3>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input type="text" id="contactName" name="name" placeholder="John Doe" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactService">Service Interested In</label>
+                                <select id="contactService" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="web-dev">Web Development</option>
+                                    <option value="ui-ux">UI/UX Design</option>
+                                    <option value="wordpress">WordPress Development</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactBudget">Budget Range</label>
+                                <select id="contactBudget" name="budget">
+                                    <option value="">Select budget...</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2500">$1,000 - $2,500</option>
+                                    <option value="2500-5000">$2,500 - $5,000</option>
+                                    <option value="5000+">$5,000+</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Project Details *</label>
+                                <textarea id="contactMessage" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Connecting talented freelancers with amazing projects. 
+                        Your success is our mission.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="seller-profile.html">Seller Profiles</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Content Writing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Wah Cantt, Punjab, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Contact Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const name = document.getElementById('contactName');
+            const email = document.getElementById('contactEmail');
+            const message = document.getElementById('contactMessage');
+            
+            // Reset errors
+            document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+            document.querySelectorAll('.form-group.error').forEach(el => el.classList.remove('error'));
+            
+            // Validate name
+            if (name.value.trim().length < 2) {
+                showError(name, 'Please enter your full name');
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                showError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            // Validate message
+            if (message.value.trim().length < 20) {
+                showError(message, 'Please provide more details about your project (min 20 characters)');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    submitBtn.classList.add('btn-success');
+                    this.reset();
+                    
+                    setTimeout(() => {
+                        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('btn-success');
+                    }, 3000);
+                }, 1500);
+            }
+        });
+        
+        function showError(input, message) {
+            const formGroup = input.closest('.form-group');
+            formGroup.classList.add('error');
+            formGroup.querySelector('.form-error').textContent = message;
+        }
+        
+        // Contact Seller Button
+        document.getElementById('contactSellerBtn').addEventListener('click', function() {
+            document.querySelector('.contact-form').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        // Share Profile Button
+        document.getElementById('shareProfileBtn').addEventListener('click', function() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Alex Chen - Web Developer',
+                    text: 'Check out this amazing web developer on SkillGrid!',
+                    url: window.location.href
+                });
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                this.innerHTML = '<i class="fas fa-check"></i> Link Copied!';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-share-alt"></i> Share';
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>

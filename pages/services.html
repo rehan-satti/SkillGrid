@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkillGrid Services - Browse freelance services in web development, design, marketing, and more.">
+    <meta name="theme-color" content="#0f0f23">
+
+    <title>Services — SkillGrid</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="seller-services.html" class="nav-link">Seller Services</a>
+                <a href="seller-profile.html" class="nav-link">Seller Profile</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80&fm=webp'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="breadcrumb reveal">
+                <a href="../index.html">Home</a>
+                <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                <span class="cur">Services</span>
+            </div>
+            <h1 class="page-title reveal">Our Services</h1>
+            <p class="page-desc reveal">Find the perfect freelancer for your next project from our wide range of professional services.</p>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="services-page">
+        <div class="container">
+            <!-- Search and Filter Bar -->
+            <div class="search-filter-bar reveal">
+                <div class="search-box-large">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="serviceSearch" placeholder="Search services, skills, or freelancers...">
+                    <button class="btn btn-primary" id="searchBtn">Search</button>
+                </div>
+            </div>
+
+            <!-- Filter tabs -->
+            <div class="filter-tabs reveal">
+                <button class="filter-tab active" data-filter="all">All Services</button>
+                <button class="filter-tab" data-filter="development">Web Development</button>
+                <button class="filter-tab" data-filter="design">Graphic Design</button>
+                <button class="filter-tab" data-filter="writing">Writing</button>
+                <button class="filter-tab" data-filter="marketing">Marketing</button>
+                <button class="filter-tab" data-filter="video">Video Editing</button>
+                <button class="filter-tab" data-filter="programming">Programming</button>
+            </div>
+
+            <!-- Results count -->
+            <div class="results-info reveal">
+                <span id="resultsCount">Showing 12 services</span>
+            </div>
+
+            <!-- Services grid -->
+            <div class="services-grid-full" id="servicesGrid">
+                <!-- Service 1 -->
+                <article class="service-card-full reveal" data-category="development" data-title="web development" data-freelancer="Alex Chen">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop" alt="Web Development" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Development</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Web Development</h3>
+                        <p class="card-desc">Responsive, blazing-fast websites built with React, Next.js, Vue, and modern stacks.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=12" alt="Alex Chen" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Alex Chen</span>
+                                    <span class="fl-level">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$45</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 2 -->
+                <article class="service-card-full reveal" data-category="design" data-title="graphic design" data-freelancer="Maya Park">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=400&fit=crop" alt="Graphic Design" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Design</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Graphic Design</h3>
+                        <p class="card-desc">Logos, branding, social media kits, and visual assets that make your brand stand out.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=47" alt="Maya Park" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Maya Park</span>
+                                    <span class="fl-level">Pro Seller</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$30</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 3 -->
+                <article class="service-card-full reveal" data-category="writing" data-title="content writing" data-freelancer="Emma Laurent">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=400&fit=crop" alt="Content Writing" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Writing</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Content Writing</h3>
+                        <p class="card-desc">Engaging blog posts, web copy, articles, and content that ranks and converts.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=49" alt="Emma Laurent" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Emma Laurent</span>
+                                    <span class="fl-level">Level 2</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$25</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 4 -->
+                <article class="service-card-full reveal" data-category="marketing" data-title="digital marketing" data-freelancer="Sara Williams">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Digital Marketing" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Marketing</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Digital Marketing</h3>
+                        <p class="card-desc">SEO optimization, social media management, and campaigns that drive real results.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=24" alt="Sara Williams" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Sara Williams</span>
+                                    <span class="fl-level">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$80</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 5 -->
+                <article class="service-card-full reveal" data-category="video" data-title="video editing" data-freelancer="Diego Rivera">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop" alt="Video Editing" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Video</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Video Editing</h3>
+                        <p class="card-desc">Professional editing, motion graphics, color grading, and post-production.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=33" alt="Diego Rivera" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Diego Rivera</span>
+                                    <span class="fl-level">Pro Seller</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$60</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 6 -->
+                <article class="service-card-full reveal" data-category="programming" data-title="mobile app development" data-freelancer="Rohan Mehta">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Mobile App Development" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Programming</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Mobile App Development</h3>
+                        <p class="card-desc">Native iOS, Android, and cross-platform apps with delightful UX and performance.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=68" alt="Rohan Mehta" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Rohan Mehta</span>
+                                    <span class="fl-level">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$120</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 7 -->
+                <article class="service-card-full reveal" data-category="design" data-title="ui ux design" data-freelancer="James Wilson">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1561070791-36c11767b26a?w=600&h=400&fit=crop" alt="UI/UX Design" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Design</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">UI/UX Design</h3>
+                        <p class="card-desc">User interface and experience design for web and mobile apps with modern tools.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=59" alt="James Wilson" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">James Wilson</span>
+                                    <span class="fl-level">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$75</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 8 -->
+                <article class="service-card-full reveal" data-category="development" data-title="wordpress development" data-freelancer="Lisa Thompson">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop" alt="WordPress Development" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Development</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">WordPress Development</h3>
+                        <p class="card-desc">Custom themes, plugins, WooCommerce stores, and WordPress maintenance.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=36" alt="Lisa Thompson" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Lisa Thompson</span>
+                                    <span class="fl-level">Level 2</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$35</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 9 -->
+                <article class="service-card-full reveal" data-category="marketing" data-title="social media marketing" data-freelancer="Nina Rodriguez">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop" alt="Social Media Marketing" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Marketing</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Social Media Marketing</h3>
+                        <p class="card-desc">Strategy, content creation, and management for Instagram, LinkedIn, Twitter.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=25" alt="Nina Rodriguez" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Nina Rodriguez</span>
+                                    <span class="fl-level">Pro Seller</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$55</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 10 -->
+                <article class="service-card-full reveal" data-category="video" data-title="motion graphics" data-freelancer="Kevin Brooks">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop" alt="Motion Graphics" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Video</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Motion Graphics</h3>
+                        <p class="card-desc">Animated logos, intros, explainer videos, and visual effects for any project.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=15" alt="Kevin Brooks" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Kevin Brooks</span>
+                                    <span class="fl-level">Level 2</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$90</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 11 -->
+                <article class="service-card-full reveal" data-category="programming" data-title="python programming" data-freelancer="David Kim">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop" alt="Python Programming" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Programming</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Python Programming</h3>
+                        <p class="card-desc">Automation scripts, data analysis, machine learning, and backend development.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=67" alt="David Kim" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">David Kim</span>
+                                    <span class="fl-level">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$50</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Service 12 -->
+                <article class="service-card-full reveal" data-category="writing" data-title="copywriting" data-freelancer="Sophie Martin">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" alt="Copywriting" loading="lazy">
+                        <div class="card-overlay">
+                            <button class="quick-view"><i class="far fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta-top">
+                            <span class="card-category">Writing</span>
+                            <div class="card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <h3 class="card-title">Copywriting</h3>
+                        <p class="card-desc">Sales copy, landing pages, email sequences, and marketing materials that convert.</p>
+                        <div class="card-footer">
+                            <div class="card-freelancer">
+                                <img src="https://i.pravatar.cc/40?img=48" alt="Sophie Martin" loading="lazy">
+                                <div class="fl-info">
+                                    <span class="fl-name">Sophie Martin</span>
+                                    <span class="fl-level">Pro Seller</span>
+                                </div>
+                            </div>
+                            <div class="card-price">
+                                <span class="price-from">From</span>
+                                <span class="price-amount">$40</span>
+                            </div>
+                        </div>
+                        <a href="service-details.html" class="card-btn">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- No results message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No services found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STATS SECTION ============ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-num" data-target="50">0</div>
+                    <div class="stat-num-suffix">K+</div>
+                    <div class="stat-label">Active Freelancers</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-num" data-target="120">0</div>
+                    <div class="stat-num-suffix">K+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-face-smile"></i></div>
+                    <div class="stat-num" data-target="98">0</div>
+                    <div class="stat-num-suffix">%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <div class="stat-num" data-target="180">0</div>
+                    <div class="stat-num-suffix">+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Connecting talented freelancers with amazing projects. 
+                        Your success is our mission.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Video Editing</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Wah Cantt, Punjab, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkillGrid Seller Services — Become a seller and showcase your skills to clients worldwide.">
+    <meta name="theme-color" content="#0f0f23">
+    <title>Seller Services — SkillGrid</title>
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/seller-services.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="seller-services.html" class="nav-link active">Seller Services</a>
+                <a href="seller-profile.html" class="nav-link">Seller Profile</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="ss-hero">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80&fm=webp');background-size:cover;background-position:center;"></div>
+        <div class="hero-overlay"></div>
+        <span class="ss-float-icon"><i class="fas fa-star"></i></span>
+        <span class="ss-float-icon"><i class="fas fa-briefcase"></i></span>
+        <span class="ss-float-icon"><i class="fas fa-dollar-sign"></i></span>
+        <span class="ss-float-icon"><i class="fas fa-rocket"></i></span>
+        <div class="container">
+            <div class="ss-hero-inner">
+                <div class="breadcrumb reveal">
+                    <a href="../index.html">Home</a>
+                    <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                    <span class="cur">Seller Services</span>
+                </div>
+                <h1 class="hero-title reveal">Start <span class="accent-text">Selling</span> Your Skills</h1>
+                <p class="hero-desc reveal">Join 50,000+ freelancers earning on SkillGrid. Set your own rates, choose your projects, and build your dream career.</p>
+                <div class="hero-buttons reveal">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Become a Seller <i class="fas fa-arrow-right"></i></a>
+                    <a href="seller-profile.html" class="btn btn-outline btn-lg">View Example Profile</a>
+                </div>
+                <div class="ss-hero-stats reveal">
+                    <div class="ss-hs"><span class="ss-hs-num">50K+</span><span class="ss-hs-label">Active Sellers</span></div>
+                    <div class="ss-hs-divider"></div>
+                    <div class="ss-hs"><span class="ss-hs-num">$2.4M+</span><span class="ss-hs-label">Paid Out Monthly</span></div>
+                    <div class="ss-hs-divider"></div>
+                    <div class="ss-hs"><span class="ss-hs-num">98%</span><span class="ss-hs-label">Satisfaction Rate</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-cue"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- HOW IT WORKS FOR SELLERS -->
+    <section class="ss-how-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">SIMPLE PROCESS</span>
+                <h2 class="section-title">How Selling Works</h2>
+                <p class="section-desc">Get set up and start earning in three easy steps.</p>
+            </div>
+            <div class="ss-steps-grid">
+                <div class="ss-step reveal">
+                    <div class="ss-step-num">01</div>
+                    <div class="ss-step-icon"><i class="fas fa-user-plus"></i></div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up, showcase your skills, add your portfolio, and set your rates. Your profile is your storefront.</p>
+                </div>
+                <div class="ss-step reveal">
+                    <div class="ss-step-num">02</div>
+                    <div class="ss-step-icon"><i class="fas fa-list-check"></i></div>
+                    <h3>List Your Services</h3>
+                    <p>Create service packages with clear deliverables, timelines, and pricing tiers that attract the right clients.</p>
+                </div>
+                <div class="ss-step reveal">
+                    <div class="ss-step-num">03</div>
+                    <div class="ss-step-icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <h3>Get Paid Securely</h3>
+                    <p>Complete projects, get approved, and receive payments directly to your account. Withdraw anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELLER BENEFITS -->
+    <section class="features ss-benefits-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">WHY SELL WITH US</span>
+                <h2 class="section-title">Benefits for Sellers</h2>
+                <p class="section-desc">Everything you need to grow your freelance business on SkillGrid.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Secure Payments</h3>
+                    <p>Get paid on time, every time. Our escrow system ensures you receive payment once work is approved.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Reach</h3>
+                    <p>Access clients from 180+ countries. Grow beyond borders and work with businesses worldwide.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Grow Your Income</h3>
+                    <p>Set competitive rates and increase earnings as you build reviews. Top sellers earn $5,000+/month.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Dedicated Support</h3>
+                    <p>24/7 seller support team to help you resolve disputes, optimize listings, and grow your business.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-award"></i></div>
+                    <h3>Seller Badges</h3>
+                    <p>Earn Top Rated, Pro Seller, and Rising Talent badges that boost your profile visibility.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Work on your terms. Set your availability, choose your projects, and work from anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE DETAILS SHOWCASE -->
+    <section class="ss-service-detail-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">EXAMPLE LISTING</span>
+                <h2 class="section-title">What Your Service Listing Looks Like</h2>
+                <p class="section-desc">Every service you publish on SkillGrid displays all the key details clients need to make a confident hiring decision.</p>
+            </div>
+
+            <div class="ss-detail-layout reveal">
+
+                <!-- LEFT — Banner + Description + Features -->
+                <div class="ss-detail-main">
+
+                    <!-- 1. Service Banner Image -->
+                    <div class="ss-detail-banner">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=480&fit=crop" alt="Web Development Service Banner" loading="lazy">
+                        <div class="ss-detail-banner-badge">
+                            <i class="fas fa-code"></i> Development
+                        </div>
+                    </div>
+
+                    <!-- 2. Detailed Description -->
+                    <div class="ss-detail-card">
+                        <h3 class="ss-detail-card-title"><i class="fas fa-info-circle"></i> Detailed Description</h3>
+                        <h4 class="ss-service-name">Professional Web Development With React &amp; Next.js</h4>
+                        <p>I will create a stunning, modern, and fully responsive website using React, Next.js, Vue.js, or your preferred framework. Whether you need a landing page, portfolio, e-commerce site, or web application, I've got you covered.</p>
+                        <p>Every project includes complete source code, detailed documentation, free hosting setup guidance, and 30 days of free support after delivery.</p>
+                        <div class="ss-seller-meta-row">
+                            <img src="https://i.pravatar.cc/40?img=12" alt="Alex Chen" loading="lazy">
+                            <span>by <a href="seller-profile.html">Alex Chen</a></span>
+                            <span class="ss-meta-rating"><i class="fas fa-star"></i> 4.9 <span>(47 reviews)</span></span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Service Features -->
+                    <div class="ss-detail-card">
+                        <h3 class="ss-detail-card-title"><i class="fas fa-list-check"></i> Service Features</h3>
+                        <div class="ss-features-grid">
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Perfect on all devices — desktop, tablet, and mobile</p>
+                                </div>
+                            </div>
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>SEO Optimized</h4>
+                                    <p>Meta tags, Open Graph, structured data, and sitemap</p>
+                                </div>
+                            </div>
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Fast Performance</h4>
+                                    <p>Optimized images, lazy loading, and code splitting</p>
+                                </div>
+                            </div>
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Source Code Included</h4>
+                                    <p>Full ownership with GitHub repository access</p>
+                                </div>
+                            </div>
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>30-Day Support</h4>
+                                    <p>Free bug fixes and post-delivery assistance</p>
+                                </div>
+                            </div>
+                            <div class="ss-feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h4>Contact Form</h4>
+                                    <p>Working forms with email integration included</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT — Pricing / Delivery / Revisions sidebar -->
+                <div class="ss-detail-sidebar">
+                    <div class="ss-pricing-card">
+                        <div class="ss-pricing-header">
+                            <span class="ss-pricing-label">Starting From</span>
+                            <!-- 3. Pricing Information -->
+                            <div class="ss-pricing-tiers">
+                                <button class="ss-tier-btn active" data-tier="basic">Basic</button>
+                                <button class="ss-tier-btn" data-tier="standard">Standard</button>
+                                <button class="ss-tier-btn" data-tier="premium">Premium</button>
+                            </div>
+                        </div>
+
+                        <div class="ss-tier-content" id="tierContent">
+                            <!-- Basic (default) -->
+                            <div class="ss-tier-panel active" data-panel="basic">
+                                <div class="ss-tier-price"><span class="ss-price-amount">$45</span><span class="ss-price-note">/ project</span></div>
+                                <p class="ss-tier-desc">Landing page or portfolio site with up to 3 pages, basic SEO setup, and mobile-responsive layout.</p>
+                                <!-- 4. Delivery Time -->
+                                <div class="ss-meta-items">
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div><strong>Delivery Time</strong><span>7 Days</span></div>
+                                    </div>
+                                    <!-- 5. Revisions Information -->
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-redo"></i>
+                                        <div><strong>Revisions</strong><span>2 Revisions</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <div><strong>Pages</strong><span>Up to 3</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-headset"></i>
+                                        <div><strong>Support</strong><span>14 Days</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Standard -->
+                            <div class="ss-tier-panel" data-panel="standard">
+                                <div class="ss-tier-price"><span class="ss-price-amount">$120</span><span class="ss-price-note">/ project</span></div>
+                                <p class="ss-tier-desc">Multi-page website with CMS integration, advanced SEO, contact forms, and performance optimization.</p>
+                                <div class="ss-meta-items">
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div><strong>Delivery Time</strong><span>14 Days</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-redo"></i>
+                                        <div><strong>Revisions</strong><span>5 Revisions</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <div><strong>Pages</strong><span>Up to 8</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-headset"></i>
+                                        <div><strong>Support</strong><span>30 Days</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Premium -->
+                            <div class="ss-tier-panel" data-panel="premium">
+                                <div class="ss-tier-price"><span class="ss-price-amount">$350</span><span class="ss-price-note">/ project</span></div>
+                                <p class="ss-tier-desc">Full web application with custom backend, database, auth system, API integrations, and dedicated support.</p>
+                                <div class="ss-meta-items">
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-clock"></i>
+                                        <div><strong>Delivery Time</strong><span>30 Days</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-redo"></i>
+                                        <div><strong>Revisions</strong><span>Unlimited</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-file-code"></i>
+                                        <div><strong>Pages</strong><span>Unlimited</span></div>
+                                    </div>
+                                    <div class="ss-meta-item">
+                                        <i class="fas fa-headset"></i>
+                                        <div><strong>Support</strong><span>60 Days</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="service-details.html" class="btn btn-primary ss-order-btn">
+                            View Full Service Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="ss-contact-link">
+                            <i class="fas fa-comment-dots"></i> Contact Seller
+                        </a>
+                    </div>
+
+                    <!-- Quick info card -->
+                    <div class="ss-quick-info">
+                        <div class="ss-qi-item">
+                            <i class="fas fa-shield-halved"></i>
+                            <span>Secure escrow payment</span>
+                        </div>
+                        <div class="ss-qi-item">
+                            <i class="fas fa-rotate-left"></i>
+                            <span>Money-back guarantee</span>
+                        </div>
+                        <div class="ss-qi-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Average reply in &lt; 2 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP SELLERS SHOWCASE -->
+    <section class="ss-sellers-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">MEET OUR SELLERS</span>
+                <h2 class="section-title">Featured Top Sellers</h2>
+                <p class="section-desc">These talented professionals are thriving on SkillGrid. You could be next.</p>
+            </div>
+            <div class="ss-sellers-grid">
+                <div class="ss-seller-card reveal">
+                    <div class="ss-seller-img"><img src="https://i.pravatar.cc/120?img=12" alt="Alex Chen" loading="lazy"></div>
+                    <div class="ss-seller-badge">Top Rated</div>
+                    <h3>Alex Chen</h3>
+                    <p class="ss-seller-role">Web Developer</p>
+                    <div class="ss-seller-rating"><i class="fas fa-star"></i> 4.9 <span>(156 reviews)</span></div>
+                    <div class="ss-seller-earning">Earns <strong>$8,400/mo</strong></div>
+                    <a href="seller-profile.html" class="btn btn-primary ss-view-btn">View Profile</a>
+                </div>
+                <div class="ss-seller-card reveal">
+                    <div class="ss-seller-img"><img src="https://i.pravatar.cc/120?img=47" alt="Maya Park" loading="lazy"></div>
+                    <div class="ss-seller-badge pro">Pro Seller</div>
+                    <h3>Maya Park</h3>
+                    <p class="ss-seller-role">Graphic Designer</p>
+                    <div class="ss-seller-rating"><i class="fas fa-star"></i> 5.0 <span>(203 reviews)</span></div>
+                    <div class="ss-seller-earning">Earns <strong>$6,200/mo</strong></div>
+                    <a href="seller-profile.html" class="btn btn-primary ss-view-btn">View Profile</a>
+                </div>
+                <div class="ss-seller-card reveal">
+                    <div class="ss-seller-img"><img src="https://i.pravatar.cc/120?img=68" alt="Rohan Mehta" loading="lazy"></div>
+                    <div class="ss-seller-badge">Top Rated</div>
+                    <h3>Rohan Mehta</h3>
+                    <p class="ss-seller-role">Mobile Developer</p>
+                    <div class="ss-seller-rating"><i class="fas fa-star"></i> 4.9 <span>(89 reviews)</span></div>
+                    <div class="ss-seller-earning">Earns <strong>$11,000/mo</strong></div>
+                    <a href="seller-profile.html" class="btn btn-primary ss-view-btn">View Profile</a>
+                </div>
+                <div class="ss-seller-card reveal">
+                    <div class="ss-seller-img"><img src="https://i.pravatar.cc/120?img=49" alt="Emma Laurent" loading="lazy"></div>
+                    <div class="ss-seller-badge rising">Rising Talent</div>
+                    <h3>Emma Laurent</h3>
+                    <p class="ss-seller-role">Content Writer</p>
+                    <div class="ss-seller-rating"><i class="fas fa-star"></i> 4.7 <span>(62 reviews)</span></div>
+                    <div class="ss-seller-earning">Earns <strong>$3,800/mo</strong></div>
+                    <a href="seller-profile.html" class="btn btn-primary ss-view-btn">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="ss-cta-section">
+        <div class="container">
+            <div class="ss-cta-inner reveal">
+                <div class="cta-glow"></div>
+                <div class="ss-cta-content">
+                    <span class="section-tag"><i class="fas fa-bolt"></i> Join Today</span>
+                    <h2>Ready to Start Earning?</h2>
+                    <p>Create your free seller profile today and start connecting with thousands of clients looking for your skills.</p>
+                    <div class="ss-cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Create Seller Profile <i class="fas fa-arrow-right"></i></a>
+                        <a href="services.html" class="btn btn-outline btn-lg">Browse Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">Connecting talented freelancers with amazing projects. Your success is our mission.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="seller-services.html">Seller Services</a></li>
+                        <li><a href="seller-profile.html">Seller Profiles</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="#">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">For Sellers</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Become a Seller</a></li>
+                        <li><a href="#">Seller Dashboard</a></li>
+                        <li><a href="#">Pricing & Fees</a></li>
+                        <li><a href="#">Seller Levels</a></li>
+                        <li><a href="#">Seller Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-location-dot"></i><span>Wah Cantt, Punjab, Pakistan</span></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a></li>
+                        <li><a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+    // Pricing tier switcher
+    (function () {
+        const tierBtns   = document.querySelectorAll('.ss-tier-btn');
+        const tierPanels = document.querySelectorAll('.ss-tier-panel');
+        if (!tierBtns.length) return;
+
+        tierBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const tier = this.dataset.tier;
+                tierBtns.forEach(b => b.classList.remove('active'));
+                tierPanels.forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+                const panel = document.querySelector('[data-panel="' + tier + '"]');
+                if (panel) panel.classList.add('active');
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,597 @@
+/* ============================================
+   SKILLGRID — ANIMATIONS
+   Scroll, Fade, Reveal, Hover Effects
+   Dark Theme Freelance Platform
+   ============================================ */
+
+/* ============ KEYFRAMES ============ */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(0, 217, 255, 0.3); }
+    50% { box-shadow: 0 0 40px rgba(0, 217, 255, 0.5); }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+@keyframes pulseRing {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* ============ REVEAL ON SCROLL ============ */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Directional reveal variants */
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.92);
+    transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reveal-scale.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Stagger children */
+.reveal[data-delay="100"] { transition-delay: 0.1s; }
+.reveal[data-delay="200"] { transition-delay: 0.2s; }
+.reveal[data-delay="300"] { transition-delay: 0.3s; }
+.reveal[data-delay="400"] { transition-delay: 0.4s; }
+.reveal[data-delay="500"] { transition-delay: 0.5s; }
+
+/* ============ HERO LOAD ANIMATIONS ============ */
+.hero .reveal:nth-child(1) { transition-delay: 0.1s; }
+.hero .reveal:nth-child(2) { transition-delay: 0.25s; }
+.hero .reveal:nth-child(3) { transition-delay: 0.4s; }
+.hero .reveal:nth-child(4) { transition-delay: 0.55s; }
+.hero .reveal:nth-child(5) { transition-delay: 0.7s; }
+
+/* ============ CARD ANIMATIONS ============ */
+.services-grid .service-card {
+    transition-delay: 0s;
+}
+
+.services-grid .service-card:nth-child(1).active { transition-delay: 0.05s; }
+.services-grid .service-card:nth-child(2).active { transition-delay: 0.12s; }
+.services-grid .service-card:nth-child(3).active { transition-delay: 0.19s; }
+.services-grid .service-card:nth-child(4).active { transition-delay: 0.26s; }
+.services-grid .service-card:nth-child(5).active { transition-delay: 0.33s; }
+.services-grid .service-card:nth-child(6).active { transition-delay: 0.4s; }
+
+/* ============ FEATURE CARD ANIMATIONS ============ */
+.features-grid .feature-card {
+    transition-delay: 0s;
+}
+
+.features-grid .feature-card:nth-child(1).active { transition-delay: 0.05s; }
+.features-grid .feature-card:nth-child(2).active { transition-delay: 0.12s; }
+.features-grid .feature-card:nth-child(3).active { transition-delay: 0.19s; }
+.features-grid .feature-card:nth-child(4).active { transition-delay: 0.26s; }
+.features-grid .feature-card:nth-child(5).active { transition-delay: 0.33s; }
+.features-grid .feature-card:nth-child(6).active { transition-delay: 0.4s; }
+
+/* ============ STEP CARD ANIMATIONS ============ */
+.steps-grid .step-card {
+    transition-delay: 0s;
+}
+
+.steps-grid .step-card:nth-child(1).active { transition-delay: 0.1s; }
+.steps-grid .step-card:nth-child(2).active { transition-delay: 0.2s; }
+.steps-grid .step-card:nth-child(3).active { transition-delay: 0.3s; }
+
+/* ============ STATS ANIMATIONS ============ */
+.stats-grid .stat-item {
+    transition-delay: 0s;
+}
+
+.stats-grid .stat-item:nth-child(1).active { transition-delay: 0.05s; }
+.stats-grid .stat-item:nth-child(2).active { transition-delay: 0.1s; }
+.stats-grid .stat-item:nth-child(3).active { transition-delay: 0.15s; }
+.stats-grid .stat-item:nth-child(4).active { transition-delay: 0.2s; }
+
+/* ============ NAVBAR ANIMATIONS ============ */
+.navbar {
+    animation: fadeInDown 0.6s ease forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+/* ============ BUTTON HOVER EFFECTS ============ */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+
+.btn-primary:hover::after {
+    transform: translateX(100%);
+}
+
+/* ============ CARD LIFT EFFECT ============ */
+.service-card {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                box-shadow 0.4s ease, 
+                border-color 0.4s ease;
+}
+
+/* ============ FOCUS STATES ============ */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* ============ SMOOTH IMAGE LOAD ============ */
+img {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+img.loaded,
+img[loading="lazy"].loaded {
+    opacity: 1;
+}
+
+/* Show images immediately if already loaded */
+img:not([loading]) {
+    opacity: 1;
+}
+
+/* ============ SECTION TRANSITIONS ============ */
+section {
+    position: relative;
+}
+
+/* ============ FADE IN ON LOAD ============ */
+.fade-in {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in-delay-1 { animation-delay: 0.1s; opacity: 0; }
+.fade-in-delay-2 { animation-delay: 0.2s; opacity: 0; }
+.fade-in-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* ============ HOVER LIFT EFFECTS ============ */
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ============ PERFORMANCE ============ */
+.service-card,
+.btn,
+.card-image img,
+.nav-link,
+.feature-card,
+.step-card,
+.stat-item {
+    will-change: transform;
+}
+
+/* ============ ACCENT GLOW EFFECT ============ */
+.accent-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* ============ COUNTER NUMBER ANIMATION ============ */
+.stat-num {
+    display: inline-block;
+}
+
+/* ============ FEATURE ICON ANIMATION ============ */
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+/* ============ STEP NUMBER HOVER ============ */
+.step-card:hover .step-number {
+    color: var(--accent);
+    opacity: 0.3;
+}
+
+.step-number {
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+/* ============ LINK HOVER EFFECTS ============ */
+.footer-links a,
+.nav-link {
+    position: relative;
+}
+
+.footer-links a::after,
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footer-links a:hover::after,
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Remove underline from footer links */
+.footer-links a::after {
+    display: none;
+}
+
+/* ============ STATS SHOWCASE ANIMATIONS ============ */
+.stats-showcase-grid .stat-showcase-card:nth-child(1).active { transition-delay: 0.05s; }
+.stats-showcase-grid .stat-showcase-card:nth-child(2).active { transition-delay: 0.13s; }
+.stats-showcase-grid .stat-showcase-card:nth-child(3).active { transition-delay: 0.21s; }
+.stats-showcase-grid .stat-showcase-card:nth-child(4).active { transition-delay: 0.29s; }
+.stats-showcase-grid .stat-showcase-card:nth-child(5).active { transition-delay: 0.37s; }
+
+/* ============ ENHANCED BUTTON HOVER EFFECTS ============ */
+
+/* Ripple effect on primary button click */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.btn-primary:active::before {
+    transform: scale(3);
+    opacity: 0;
+    transition: 0s;
+}
+
+/* Arrow icon push on hover */
+.btn:hover i.fa-arrow-right {
+    transform: translateX(5px);
+}
+
+/* Pulse effect on btn-primary */
+.btn-primary:focus-visible {
+    animation: btnPulse 0.4s ease;
+}
+@keyframes btnPulse {
+    0%   { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.5); }
+    100% { box-shadow: 0 0 0 12px rgba(0, 217, 255, 0); }
+}
+
+/* Ghost button hover */
+.btn-ghost {
+    transition: color var(--t), background var(--t), transform var(--t);
+}
+.btn-ghost:hover {
+    transform: translateY(-1px);
+}
+
+/* Outline button shimmer */
+.btn-outline {
+    position: relative;
+    overflow: hidden;
+}
+.btn-outline::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(0,217,255,0.15) 50%, transparent 60%);
+    background-size: 200% auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.btn-outline:hover::after {
+    opacity: 1;
+    animation: shimmer 1s linear;
+}
+
+/* ============ ENHANCED SERVICE CARD HOVER ============ */
+.service-card,
+.service-card-full {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow 0.4s ease,
+                border-color 0.4s ease;
+}
+
+/* Image scale is already handled; add smooth overlay transition */
+.service-card .card-overlay,
+.service-card-full .card-overlay {
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+/* Card inner glow on hover */
+.service-card::after,
+.service-card-full::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 1px rgba(0, 217, 255, 0);
+    transition: box-shadow 0.4s ease;
+    pointer-events: none;
+}
+.service-card:hover::after,
+.service-card-full:hover::after {
+    box-shadow: inset 0 0 0 1px rgba(0, 217, 255, 0.25);
+}
+
+/* ============ NAVIGATION LINK HOVER EFFECTS ============ */
+.nav-link {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+/* Remove the old pseudo-element underline from animations */
+.nav-link::after { display: none; }
+
+/* ============ SOCIAL ICON HOVER EFFECTS ============ */
+.social-icons a {
+    transition: background var(--t), color var(--t),
+                transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color var(--t), box-shadow var(--t);
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.12);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.3);
+}
+
+/* Social links in contact page */
+.social-link {
+    transition: background var(--t), color var(--t),
+                transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color var(--t), box-shadow var(--t);
+}
+.social-link:hover {
+    transform: translateY(-5px) scale(1.12);
+}
+
+/* ============ FEATURE CARD HOVER ============ */
+.feature-card {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color 0.3s ease,
+                box-shadow 0.4s ease;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-light));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.feature-card { position: relative; overflow: hidden; }
+.feature-card:hover::before { opacity: 1; }
+
+/* ============ FILTER TAB HOVER ============ */
+.filter-tab {
+    transition: color var(--t), border-color var(--t),
+                background var(--t),
+                transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
+                box-shadow var(--t);
+}
+.filter-tab:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-sm);
+}
+.filter-tab.active {
+    box-shadow: 0 4px 14px rgba(0, 217, 255, 0.3);
+}
+
+/* ============ FOOTER LINK HOVER ============ */
+.footer-links a {
+    position: relative;
+    transition: color var(--t), padding-left var(--t);
+}
+/* Remove old underline pseudo for footer */
+.footer-links a::after { display: none; }
+
+/* ============ STAT SHOWCASE CARD HOVER ============ */
+.stat-showcase-card {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+                border-color 0.3s ease,
+                box-shadow 0.4s ease;
+}
+.stat-showcase-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-lg);
+}
+
+/* ============ STEP CARD HOVER ============ */
+.step-card {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.step-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ============ BACK TO TOP HOVER ============ */
+.back-to-top {
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                background var(--t), opacity var(--t), visibility var(--t);
+}
+.back-to-top:hover {
+    transform: translateY(-6px) scale(1.1);
+}
+
+/* ============ QUICK VIEW HEART BUTTON ============ */
+.quick-view {
+    transition: background var(--t), color var(--t),
+                transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.quick-view:hover {
+    transform: scale(1.2);
+}

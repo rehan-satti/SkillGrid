@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Web Development Service by Alex Chen. Modern React, Next.js websites with fast delivery and unlimited revisions.">
+    <meta name="theme-color" content="#0f0f23">
+
+    <title>Web Development Service | $45+ | SkillGrid</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="seller-services.html" class="nav-link">Seller Services</a>
+                <a href="seller-profile.html" class="nav-link">Seller Profile</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ SERVICE HERO ============ -->
+    <section class="service-details-hero">
+        <div class="service-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&q=80&fm=webp'); background-size: cover; background-position: center;"></div>
+        <div class="service-hero-overlay"></div>
+        <div class="container">
+            <div class="breadcrumb reveal">
+                <a href="../index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="services.html">Services</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Web Development</span>
+            </div>
+            <div class="service-hero-content reveal">
+                <div class="service-category-badge">
+                    <i class="fas fa-code"></i> Development
+                </div>
+                <h1 class="service-hero-title">Professional Web Development With React & Next.js</h1>
+                <p class="service-hero-desc">Get a modern, responsive, and blazing-fast website built with the latest technologies. Perfect for startups, businesses, and portfolios.</p>
+                <div class="service-hero-meta">
+                    <div class="meta-item">
+                        <img src="https://i.pravatar.cc/40?img=12" alt="Alex Chen">
+                        <span>by <a href="seller-profile.html">Alex Chen</a></span>
+                        <span class="meta-rating"><i class="fas fa-star"></i> 4.9 (47 reviews)</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Delivery: 7 days</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-redo"></i>
+                        <span>Unlimited Revisions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICE CONTENT ============ -->
+    <section class="service-details-content">
+        <div class="container">
+            <div class="service-details-grid">
+
+                <!-- Left Column - Main Content -->
+                <div class="service-main-col">
+
+                    <!-- Service Gallery -->
+                    <div class="service-gallery-card reveal">
+                        <div class="gallery-main">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop" alt="Web Development Project" id="mainGalleryImage">
+                        </div>
+                        <div class="gallery-thumbnails">
+                            <button class="gallery-thumb active" data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=150&h=100&fit=crop" alt="Project 1">
+                            </button>
+                            <button class="gallery-thumb" data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=100&fit=crop" alt="Project 2">
+                            </button>
+                            <button class="gallery-thumb" data-image="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&h=500&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=150&h=100&fit=crop" alt="Project 3">
+                            </button>
+                            <button class="gallery-thumb" data-image="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&h=500&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=150&h=100&fit=crop" alt="Project 4">
+                            </button>
+                            <button class="gallery-thumb" data-image="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&h=500&fit=crop">
+                                <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=150&h=100&fit=crop" alt="Project 5">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- About This Service -->
+                    <div class="service-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-info-circle"></i> About This Service</h2>
+                        <div class="service-about-text">
+                            <p>I will create a stunning, modern, and fully responsive website using React, Next.js, Vue.js, or your preferred framework. Whether you need a landing page, portfolio, e-commerce site, or web application, I've got you covered.</p>
+                            
+                            <h3>What Makes My Service Special?</h3>
+                            <ul class="service-highlights">
+                                <li><i class="fas fa-check-circle"></i> <strong>Modern Tech Stack:</strong> React, Next.js, Vue.js, TypeScript, Tailwind CSS</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Lightning Fast:</strong> Optimized performance with 90+ PageSpeed scores</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Mobile First:</strong> Perfect responsive design for all devices</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>SEO Optimized:</strong> Built with SEO best practices from the start</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Clean Code:</strong> Well-structured, maintainable, and scalable</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Fast Delivery:</strong> Quick turnaround without compromising quality</li>
+                            </ul>
+                            
+                            <h3>What You'll Get</h3>
+                            <p>Every project includes: complete source code, detailed documentation, free hosting setup guidance, and 30 days of free support after delivery. I believe in transparent communication throughout the entire process and will keep you updated every step of the way.</p>
+                            
+                            <h3>My Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <span class="step-num">1</span>
+                                    <span class="step-text">Discovery & Planning</span>
+                                </div>
+                                <div class="process-step">
+                                    <span class="step-num">2</span>
+                                    <span class="step-text">Design & Prototype</span>
+                                </div>
+                                <div class="process-step">
+                                    <span class="step-num">3</span>
+                                    <span class="step-text">Development</span>
+                                </div>
+                                <div class="process-step">
+                                    <span class="step-num">4</span>
+                                    <span class="step-text">Testing & QA</span>
+                                </div>
+                                <div class="process-step">
+                                    <span class="step-num">5</span>
+                                    <span class="step-text">Launch & Support</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service Features -->
+                    <div class="service-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-list-check"></i> What's Included</h2>
+                        <div class="features-included">
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Responsive Design</h4>
+                                    <p>Perfect on all devices - desktop, tablet, and mobile</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>SEO Setup</h4>
+                                    <p>Meta tags, Open Graph, structured data, and sitemap</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Fast Performance</h4>
+                                    <p>Optimized images, lazy loading, and code splitting</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Contact Forms</h4>
+                                    <p>Working contact forms with email integration</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Analytics Setup</h4>
+                                    <p>Google Analytics and tracking integration</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Source Code</h4>
+                                    <p>Full ownership with GitHub repository access</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>Documentation</h4>
+                                    <p>Comprehensive docs for future maintenance</p>
+                                </div>
+                            </div>
+                            <div class="feature-include-item">
+                                <i class="fas fa-check"></i>
+                                <div>
+                                    <h4>30-Day Support</h4>
+                                    <p>Free bug fixes and support after delivery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technology Stack -->
+                    <div class="service-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-layer-group"></i> Technology Stack</h2>
+                        <div class="tech-stack-grid">
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-n"></i>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-vuejs"></i>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-sass"></i>
+                                <span>SASS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-wordpress"></i>
+                                <span>WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Section -->
+                    <div class="service-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-star"></i> Client Reviews</h2>
+                        
+                        <!-- Rating Summary -->
+                        <div class="rating-summary">
+                            <div class="rating-big">
+                                <span class="rating-number">4.9</span>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="rating-count">47 Reviews</span>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar-item">
+                                    <span>5</span>
+                                    <i class="fas fa-star"></i>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 85%;"></div></div>
+                                    <span>85%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span>4</span>
+                                    <i class="fas fa-star"></i>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 10%;"></div></div>
+                                    <span>10%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span>3</span>
+                                    <i class="fas fa-star"></i>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 3%;"></div></div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span>2</span>
+                                    <i class="fas fa-star"></i>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div>
+                                    <span>1%</span>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <span>1</span>
+                                    <i class="fas fa-star"></i>
+                                    <div class="bar-track"><div class="bar-fill" style="width: 1%;"></div></div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Filter Reviews -->
+                        <div class="review-filters">
+                            <button class="review-filter-btn active" data-filter="all">All (47)</button>
+                            <button class="review-filter-btn" data-filter="5">5 Stars (40)</button>
+                            <button class="review-filter-btn" data-filter="4">4 Stars (5)</button>
+                            <button class="review-filter-btn" data-filter="3">3 Stars (1)</button>
+                            <button class="review-filter-btn" data-filter="positive">Positive (45)</button>
+                        </div>
+
+                        <!-- Reviews List -->
+                        <div class="reviews-list" id="reviewsList">
+                            <div class="review-card" data-rating="5">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://i.pravatar.cc/50?img=32" alt="Sarah Johnson">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Sarah Johnson</h4>
+                                        <p class="reviewer-title">CEO, TechStart Inc.</p>
+                                        <p class="review-date"><i class="fas fa-calendar"></i> 2 weeks ago</p>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Absolutely incredible work! Alex delivered our e-commerce platform ahead of schedule and the quality exceeded all expectations. The code is clean, well-documented, and easy to maintain. Communication was top-notch throughout the project. Already planning our next collaboration!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-tag"></i> E-commerce Platform Development
+                                </div>
+                                <div class="review-helpful">
+                                    <span>Was this review helpful?</span>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-up"></i> 12</button>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-down"></i> 0</button>
+                                </div>
+                            </div>
+
+                            <div class="review-card" data-rating="5">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://i.pravatar.cc/50?img=45" alt="Michael Brown">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Michael Brown</h4>
+                                        <p class="reviewer-title">Product Manager, InnovateCo</p>
+                                        <p class="review-date"><i class="fas fa-calendar"></i> 1 month ago</p>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Alex transformed our outdated website into a modern, fast, and beautiful platform. The attention to detail and user experience considerations were exceptional. Highly recommend for any web development needs!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-tag"></i> Website Redesign & Modernization
+                                </div>
+                                <div class="review-helpful">
+                                    <span>Was this review helpful?</span>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-up"></i> 8</button>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-down"></i> 0</button>
+                                </div>
+                            </div>
+
+                            <div class="review-card" data-rating="5">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://i.pravatar.cc/50?img=26" alt="Emily Davis">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Emily Davis</h4>
+                                        <p class="reviewer-title">Founder, DesignStudio</p>
+                                        <p class="review-date"><i class="fas fa-calendar"></i> 1 month ago</p>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"As a designer myself, I have high standards for web development. Alex not only met but exceeded my expectations. The React implementation was pixel-perfect to my designs and the animations were smooth as butter. A true professional!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-tag"></i> Portfolio Website Development
+                                </div>
+                                <div class="review-helpful">
+                                    <span>Was this review helpful?</span>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-up"></i> 15</button>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-down"></i> 0</button>
+                                </div>
+                            </div>
+
+                            <div class="review-card" data-rating="4">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://i.pravatar.cc/50?img=51" alt="James Wilson">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>James Wilson</h4>
+                                        <p class="reviewer-title">CTO, DataFlow Systems</p>
+                                        <p class="review-date"><i class="fas fa-calendar"></i> 2 months ago</p>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Great work overall! The dashboard Alex built for us is fantastic. Communication was excellent and the code quality is top-notch. I deducted one star only because we had a slight delay due to scope changes, but Alex handled it professionally."</p>
+                                <div class="review-project">
+                                    <i class="fas fa-tag"></i> Admin Dashboard Development
+                                </div>
+                                <div class="review-helpful">
+                                    <span>Was this review helpful?</span>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-up"></i> 6</button>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-down"></i> 1</button>
+                                </div>
+                            </div>
+
+                            <div class="review-card" data-rating="5">
+                                <div class="review-header">
+                                    <div class="reviewer-avatar">
+                                        <img src="https://i.pravatar.cc/50?img=33" alt="Lisa Anderson">
+                                    </div>
+                                    <div class="reviewer-details">
+                                        <h4>Lisa Anderson</h4>
+                                        <p class="reviewer-title">Marketing Director, GreenTech</p>
+                                        <p class="review-date"><i class="fas fa-calendar"></i> 2 months ago</p>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="review-text">"Our new website has significantly improved our lead generation. The SEO optimization alone has doubled our organic traffic. Alex was patient, thorough, and delivered exactly what we needed. Can't recommend highly enough!"</p>
+                                <div class="review-project">
+                                    <i class="fas fa-tag"></i> Corporate Website Development
+                                </div>
+                                <div class="review-helpful">
+                                    <span>Was this review helpful?</span>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-up"></i> 9</button>
+                                    <button class="helpful-btn"><i class="far fa-thumbs-down"></i> 0</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Load More Reviews -->
+                        <button class="load-more-reviews" id="loadMoreReviews">
+                            Load More Reviews <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="service-section-card reveal">
+                        <h2 class="section-subtitle"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                        <div class="faq-list">
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you provide source code after completion?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes, absolutely! You will receive full ownership of the source code, including access to the GitHub repository. The code is well-commented and documented for easy future maintenance.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What technologies do you work with?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>I specialize in React, Next.js, Vue.js, TypeScript, Node.js, and various CSS frameworks like Tailwind CSS and SASS. I'm also experienced with WordPress, Shopify, and other CMS platforms.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Do you offer ongoing support?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>I provide 30 days of free support after delivery for any bugs or issues. For ongoing maintenance and updates, we can discuss a separate support arrangement.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>Can you work with my existing design files?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Yes! I can work with Figma, Adobe XD, Sketch, or any other design format. If you don't have designs yet, I can also create the design as part of the project.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">
+                                    <span>What is your typical turnaround time?</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>Delivery time depends on project complexity. A simple landing page can be delivered in 3-5 days, while more complex applications may take 2-4 weeks. Rush delivery is available for an additional fee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Order Sidebar -->
+                <div class="service-sidebar-col">
+
+                    <!-- Order Card -->
+                    <div class="order-card reveal">
+                        <div class="pricing-header">
+                            <h3>Choose Your Package</h3>
+                        </div>
+
+                        <!-- Package Selection -->
+                        <div class="package-options">
+                            <label class="package-option selected" data-package="basic">
+                                <input type="radio" name="package" value="basic" checked>
+                                <div class="package-content">
+                                    <div class="package-header">
+                                        <span class="package-name">Basic</span>
+                                        <span class="package-badge">Popular</span>
+                                    </div>
+                                    <div class="package-price">
+                                        <span class="price">$45</span>
+                                        <span class="delivery"><i class="fas fa-clock"></i> 7 days</span>
+                                    </div>
+                                    <p class="package-desc">Perfect for landing pages and simple websites</p>
+                                </div>
+                            </label>
+
+                            <label class="package-option" data-package="standard">
+                                <input type="radio" name="package" value="standard">
+                                <div class="package-content">
+                                    <div class="package-header">
+                                        <span class="package-name">Standard</span>
+                                        <span class="package-badge recommended">Recommended</span>
+                                    </div>
+                                    <div class="package-price">
+                                        <span class="price">$120</span>
+                                        <span class="delivery"><i class="fas fa-clock"></i> 10 days</span>
+                                    </div>
+                                    <p class="package-desc">Ideal for business websites with multiple pages</p>
+                                </div>
+                            </label>
+
+                            <label class="package-option" data-package="premium">
+                                <input type="radio" name="package" value="premium">
+                                <div class="package-content">
+                                    <div class="package-header">
+                                        <span class="package-name">Premium</span>
+                                    </div>
+                                    <div class="package-price">
+                                        <span class="price">$250</span>
+                                        <span class="delivery"><i class="fas fa-clock"></i> 14 days</span>
+                                    </div>
+                                    <p class="package-desc">Full web app with backend and database</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Package Features -->
+                        <div class="package-features" id="packageFeatures">
+                            <!-- Basic Package Features -->
+                            <div class="feature-list basic-features">
+                                <div class="feature-item"><i class="fas fa-check"></i> Up to 5 pages</div>
+                                <div class="feature-item"><i class="fas fa-check"></i> Responsive design</div>
+                                <div class="feature-item"><i class="fas fa-check"></i> Contact form</div>
+                                <div class="feature-item"><i class="fas fa-check"></i> Basic SEO</div>
+                                <div class="feature-item"><i class="fas fa-check"></i> 2 revisions</div>
+                                <div class="feature-item"><i class="fas fa-check"></i> Source code</div>
+                            </div>
+                        </div>
+
+                        <!-- Extras -->
+                        <div class="extras-section">
+                            <h4><i class="fas fa-plus-circle"></i> Add Extras</h4>
+                            <div class="extra-item">
+                                <label class="extra-checkbox">
+                                    <input type="checkbox" name="extra" data-price="20" data-days="2">
+                                    <span class="checkmark"></span>
+                                    <span class="extra-info">
+                                        <span class="extra-name">Extra Fast Delivery</span>
+                                        <span class="extra-price">+$20</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="extra-item">
+                                <label class="extra-checkbox">
+                                    <input type="checkbox" name="extra" data-price="30" data-days="0">
+                                    <span class="checkmark"></span>
+                                    <span class="extra-info">
+                                        <span class="extra-name">Additional Page</span>
+                                        <span class="extra-price">+$30</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="extra-item">
+                                <label class="extra-checkbox">
+                                    <input type="checkbox" name="extra" data-price="50" data-days="3">
+                                    <span class="checkmark"></span>
+                                    <span class="extra-info">
+                                        <span class="extra-name">CMS Integration</span>
+                                        <span class="extra-price">+$50</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="extra-item">
+                                <label class="extra-checkbox">
+                                    <input type="checkbox" name="extra" data-price="40" data-days="2">
+                                    <span class="checkmark"></span>
+                                    <span class="extra-info">
+                                        <span class="extra-name">Extra Revisions</span>
+                                        <span class="extra-price">+$40</span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Order Summary -->
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Basic Package</span>
+                                <span>$45</span>
+                            </div>
+                            <div class="summary-row" id="extrasSummary" style="display: none;">
+                                <span>Extras</span>
+                                <span id="extrasTotal">$0</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total</span>
+                                <span id="orderTotal">$45</span>
+                            </div>
+                            <div class="summary-row delivery">
+                                <span><i class="fas fa-clock"></i> Delivery</span>
+                                <span id="deliveryTime">7 days</span>
+                            </div>
+                        </div>
+
+                        <!-- Order Form -->
+                        <form class="order-form" id="orderForm">
+                            <div class="form-group">
+                                <label for="projectName">Project Name *</label>
+                                <input type="text" id="projectName" name="projectName" placeholder="My Awesome Website" required>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectURL">Website URL (if exists)</label>
+                                <input type="url" id="projectURL" name="projectURL" placeholder="https://example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="projectDescription">Project Details *</label>
+                                <textarea id="projectDescription" name="description" rows="4" placeholder="Describe your project requirements, goals, and any specific features you need..." required></textarea>
+                                <span class="form-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="referenceFiles">Reference Files</label>
+                                <div class="file-upload" id="fileUpload">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <p>Drag & drop files here or <span class="browse">browse</span></p>
+                                    <input type="file" id="referenceFiles" name="files" multiple accept=".jpg,.png,.pdf,.zip,.fig,.xd">
+                                </div>
+                                <div class="uploaded-files" id="uploadedFiles"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="orderBtn">
+                                <i class="fas fa-shopping-cart"></i> Continue to Order ($45)
+                            </button>
+                        </form>
+
+                        <div class="order-guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <p><strong>100% Satisfaction Guarantee</strong><br>Money-back if not satisfied</p>
+                        </div>
+                    </div>
+
+                    <!-- Seller Card -->
+                    <div class="seller-quick-card reveal">
+                        <div class="seller-card-header">
+                            <img src="https://i.pravatar.cc/80?img=12" alt="Alex Chen">
+                            <div class="seller-quick-info">
+                                <h4><a href="seller-profile.html">Alex Chen</a></h4>
+                                <span class="seller-quick-badge"><i class="fas fa-check-circle"></i> Top Rated</span>
+                                <div class="seller-quick-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9</span>
+                                    <span class="rating-count">(47)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="seller-quick-stats">
+                            <div><i class="fas fa-map-marker-alt"></i> San Francisco, CA</div>
+                            <div><i class="fas fa-clock"></i> Usually responds in 2h</div>
+                        </div>
+                        <a href="seller-profile.html" class="btn btn-outline btn-block">View Full Profile</a>
+                    </div>
+
+                    <!-- Compare Packages -->
+                    <div class="compare-card reveal">
+                        <h4><i class="fas fa-balance-scale"></i> Compare Packages</h4>
+                        <div class="compare-table">
+                            <div class="compare-row compare-header">
+                                <div class="compare-feature"></div>
+                                <div>Basic</div>
+                                <div>Standard</div>
+                                <div>Premium</div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Pages</div>
+                                <div>5</div>
+                                <div>15</div>
+                                <div>Unlimited</div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Revisions</div>
+                                <div>2</div>
+                                <div>5</div>
+                                <div>Unlimited</div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Responsive</div>
+                                <div><i class="fas fa-check"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Contact Form</div>
+                                <div><i class="fas fa-check"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">SEO Setup</div>
+                                <div>Basic</div>
+                                <div>Advanced</div>
+                                <div>Full</div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">CMS</div>
+                                <div><i class="fas fa-times"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Backend</div>
+                                <div><i class="fas fa-times"></i></div>
+                                <div><i class="fas fa-times"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                            </div>
+                            <div class="compare-row">
+                                <div class="compare-feature">Database</div>
+                                <div><i class="fas fa-times"></i></div>
+                                <div><i class="fas fa-times"></i></div>
+                                <div><i class="fas fa-check"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Connecting talented freelancers with amazing projects. 
+                        Your success is our mission.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="seller-profile.html">Seller Profiles</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Content Writing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Wah Cantt, Punjab, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        // Package Selection
+        document.querySelectorAll('.package-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.package-option').forEach(opt => opt.classList.remove('selected'));
+                this.classList.add('selected');
+                this.querySelector('input').checked = true;
+                updateOrderSummary();
+            });
+        });
+
+        // Extras Selection
+        document.querySelectorAll('input[name="extra"]').forEach(checkbox => {
+            checkbox.addEventListener('change', updateOrderSummary);
+        });
+
+        function updateOrderSummary() {
+            const selectedPackage = document.querySelector('input[name="package"]:checked').value;
+            let basePrice = 0;
+            let deliveryDays = 0;
+
+            switch(selectedPackage) {
+                case 'basic':
+                    basePrice = 45;
+                    deliveryDays = 7;
+                    break;
+                case 'standard':
+                    basePrice = 120;
+                    deliveryDays = 10;
+                    break;
+                case 'premium':
+                    basePrice = 250;
+                    deliveryDays = 14;
+                    break;
+            }
+
+            let extrasPrice = 0;
+            let extraDays = 0;
+
+            document.querySelectorAll('input[name="extra"]:checked').forEach(extra => {
+                extrasPrice += parseInt(extra.dataset.price);
+                extraDays += parseInt(extra.dataset.days);
+            });
+
+            const total = basePrice + extrasPrice;
+            const totalDelivery = deliveryDays + extraDays;
+
+            document.getElementById('orderTotal').textContent = '$' + total;
+            document.getElementById('deliveryTime').textContent = totalDelivery + ' days';
+            document.getElementById('orderBtn').innerHTML = '<i class="fas fa-shopping-cart"></i> Continue to Order ($' + total + ')';
+
+            if (extrasPrice > 0) {
+                document.getElementById('extrasSummary').style.display = 'flex';
+                document.getElementById('extrasTotal').textContent = '+$' + extrasPrice;
+            } else {
+                document.getElementById('extrasSummary').style.display = 'none';
+            }
+        }
+
+        // Gallery Thumbnails
+        document.querySelectorAll('.gallery-thumb').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                document.getElementById('mainGalleryImage').src = this.dataset.image;
+            });
+        });
+
+        // Review Filters
+        document.querySelectorAll('.review-filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.review-filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                document.querySelectorAll('.review-card').forEach(card => {
+                    if (filter === 'all' || filter === 'positive') {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = card.dataset.rating === filter ? 'block' : 'none';
+                    }
+                });
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.closest('.faq-item');
+                const answer = this.nextElementSibling;
+                
+                faqItem.classList.toggle('active');
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                } else {
+                    answer.style.maxHeight = '0';
+                }
+            });
+        });
+
+        // Order Form Validation
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            const projectName = document.getElementById('projectName');
+            const projectDescription = document.getElementById('projectDescription');
+            
+            document.querySelectorAll('.form-error').forEach(el => el.textContent = '');
+            document.querySelectorAll('.form-group.error').forEach(el => el.classList.remove('error'));
+            
+            if (projectName.value.trim().length < 3) {
+                showFormError(projectName, 'Please enter a valid project name');
+                isValid = false;
+            }
+            
+            if (projectDescription.value.trim().length < 30) {
+                showFormError(projectDescription, 'Please provide more details about your project (min 30 characters)');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                const submitBtn = document.getElementById('orderBtn');
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Processing...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Order Placed!';
+                    submitBtn.classList.add('btn-success');
+                    
+                    setTimeout(() => {
+                        alert('Thank you! Your order has been placed. The seller will contact you shortly.');
+                        submitBtn.innerHTML = '<i class="fas fa-shopping-cart"></i> Continue to Order ($' + document.getElementById('orderTotal').textContent.replace('$', '') + ')';
+                        submitBtn.disabled = false;
+                        submitBtn.classList.remove('btn-success');
+                    }, 2000);
+                }, 1500);
+            }
+        });
+
+        function showFormError(input, message) {
+            const formGroup = input.closest('.form-group');
+            formGroup.classList.add('error');
+            formGroup.querySelector('.form-error').textContent = message;
+        }
+
+        // File Upload
+        const fileInput = document.getElementById('referenceFiles');
+        const uploadedFiles = document.getElementById('uploadedFiles');
+        const fileUpload = document.getElementById('fileUpload');
+
+        fileUpload.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            this.classList.add('dragover');
+        });
+
+        fileUpload.addEventListener('dragleave', function() {
+            this.classList.remove('dragover');
+        });
+
+        fileUpload.addEventListener('drop', function(e) {
+            e.preventDefault();
+            this.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        fileInput.addEventListener('change', function() {
+            handleFiles(this.files);
+        });
+
+        function handleFiles(files) {
+            Array.from(files).forEach(file => {
+                const fileElement = document.createElement('div');
+                fileElement.className = 'uploaded-file';
+                fileElement.innerHTML = '<i class="fas fa-file"></i><span>' + file.name + '</span><button type="button" class="remove-file"><i class="fas fa-times"></i></button>';
+                uploadedFiles.appendChild(fileElement);
+                
+                fileElement.querySelector('.remove-file').addEventListener('click', function() {
+                    fileElement.remove();
+                });
+            });
+        }
+
+        // Helpful Buttons
+        document.querySelectorAll('.helpful-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (this.classList.contains('active')) {
+                    this.classList.remove('active');
+                    this.innerHTML = this.querySelector('i').classList.contains('fa-thumbs-up') 
+                        ? '<i class="far fa-thumbs-up"></i> ' + (parseInt(this.textContent) - 1)
+                        : '<i class="far fa-thumbs-down"></i> ' + (parseInt(this.textContent) - 1);
+                } else {
+                    document.querySelectorAll('.helpful-btn.active').forEach(active => active.classList.remove('active'));
+                    this.classList.add('active');
+                    this.innerHTML = this.querySelector('i').classList.contains('fa-thumbs-up')
+                        ? '<i class="fas fa-thumbs-up"></i> ' + (parseInt(this.textContent) + 1)
+                        : '<i class="fas fa-thumbs-down"></i> ' + (parseInt(this.textContent) + 1);
+                }
+            });
+        });
+
+        // Load More Reviews
+        document.getElementById('loadMoreReviews').addEventListener('click', function() {
+            this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+            setTimeout(() => {
+                this.innerHTML = 'All Reviews Loaded <i class="fas fa-check"></i>';
+                this.disabled = true;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

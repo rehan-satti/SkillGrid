@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About SkillGrid — Connecting businesses with world-class freelance talent across the globe.">
+    <meta name="theme-color" content="#0f0f23">
+
+    <title>SkillGrid — About Us</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Shared project styles — same as index.html -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+
+    <!-- ============ LOADER — identical to index.html ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- read-progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ============ NAVIGATION — identical structure to index.html ============ -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html"              class="nav-link">Home</a>
+                <a href="services.html"              class="nav-link">Services</a>
+                <a href="seller-services.html"       class="nav-link">Seller Services</a>
+                <a href="seller-profile.html"        class="nav-link">Seller Profile</a>
+                <a href="about.html"                 class="nav-link active">About</a>
+                <a href="contact.html"               class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero-about">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <span class="float-icon"><i class="fas fa-code"></i></span>
+        <span class="float-icon"><i class="fas fa-paintbrush"></i></span>
+        <span class="float-icon"><i class="fas fa-chart-line"></i></span>
+        <span class="float-icon"><i class="fas fa-layer-group"></i></span>
+
+        <div class="hero-inner">
+            <div class="breadcrumb reveal">
+                <a href="../index.html">Home</a>
+                <span class="sep">/</span>
+                <span class="cur">About Us</span>
+            </div>
+
+            <h1 class="hero-title reveal">
+                About <span class="accent-text">SkillGrid</span>
+            </h1>
+
+            <p class="hero-desc reveal">
+                Connecting businesses with world-class freelance talent across the globe.
+            </p>
+
+            <div class="hero-buttons reveal">
+                <a href="services.html" class="btn btn-primary btn-lg">
+                    Browse Services <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="contact.html" class="btn btn-outline btn-lg">Get Started</a>
+            </div>
+        </div>
+
+        <div class="scroll-cue"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- ============ COMPANY INTRO ============ -->
+    <section class="company-intro">
+        <div class="container">
+
+            <!-- Desktop: two-column grid -->
+            <div class="intro-grid">
+                <div class="intro-text reveal">
+                    <span class="eyebrow">Who We Are</span>
+                    <h2>Redefining How the<br>World Works Together</h2>
+                    <div class="intro-divider"></div>
+                    <p>SkillGrid is a modern freelance marketplace designed to connect businesses, startups, and entrepreneurs with highly skilled professionals worldwide.</p>
+                    <p>Our platform simplifies hiring by providing secure communication, transparent collaboration, and trusted freelance services across every skill category.</p>
+                    <p>Founded with the vision of making talent accessible to everyone, SkillGrid empowers freelancers to showcase their expertise while helping clients achieve outstanding results through quality work and professional partnerships.</p>
+                    <div class="intro-pills">
+                        <div class="intro-pill"><i class="fas fa-shield-halved"></i><span>Secure &amp; Verified</span></div>
+                        <div class="intro-pill"><i class="fas fa-globe"></i><span>Global Reach</span></div>
+                        <div class="intro-pill"><i class="fas fa-bolt"></i><span>Fast Hiring</span></div>
+                    </div>
+                </div>
+                <div class="intro-img-wrap reveal">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&auto=format&fit=crop"
+                         alt="Freelancer working remotely" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Mobile: stacked -->
+            <div class="intro-mobile">
+                <div class="reveal">
+                    <span class="eyebrow">Who We Are</span>
+                    <h2>Redefining How the World Works Together</h2>
+                    <div class="intro-divider"></div>
+                </div>
+                <div class="intro-img-wrap reveal">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=80&auto=format&fit=crop"
+                         alt="Freelancer working remotely" loading="lazy">
+                </div>
+                <div class="reveal">
+                    <p>SkillGrid is a modern freelance marketplace designed to connect businesses, startups, and entrepreneurs with highly skilled professionals worldwide.</p>
+                    <p style="margin-top:14px">Our platform simplifies hiring by providing secure communication, transparent collaboration, and trusted freelance services.</p>
+                    <p style="margin-top:14px">Founded with the vision of making talent accessible to everyone, SkillGrid empowers freelancers to showcase their expertise while helping clients achieve outstanding results.</p>
+                    <div class="intro-pills" style="margin-top:28px">
+                        <div class="intro-pill"><i class="fas fa-shield-halved"></i><span>Secure &amp; Verified</span></div>
+                        <div class="intro-pill"><i class="fas fa-globe"></i><span>Global Reach</span></div>
+                        <div class="intro-pill"><i class="fas fa-bolt"></i><span>Fast Hiring</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ PURPOSE & GOALS ============ -->
+    <section class="purpose-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">PURPOSE &amp; GOALS</span>
+                <h2 class="section-title">Purpose &amp; Goals</h2>
+                <p class="section-desc">The pillars that drive every decision we make at SkillGrid.</p>
+            </div>
+            <div class="purpose-grid">
+                <div class="purpose-card reveal" data-delay="100">
+                    <div class="purpose-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Platform Purpose</h3>
+                    <p>Create a trusted environment where clients and freelancers collaborate efficiently and achieve successful project outcomes.</p>
+                </div>
+                <div class="purpose-card reveal" data-delay="200">
+                    <div class="purpose-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Business Goals</h3>
+                    <p>Expand global opportunities, increase project success rates, and build one of the most reliable freelance ecosystems.</p>
+                </div>
+                <div class="purpose-card reveal" data-delay="300">
+                    <div class="purpose-icon"><i class="fas fa-earth-americas"></i></div>
+                    <h3>Global Reach</h3>
+                    <p>Connect talent and businesses across different countries, industries, and skill categories seamlessly.</p>
+                </div>
+                <div class="purpose-card reveal" data-delay="400">
+                    <div class="purpose-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Innovation</h3>
+                    <p>Continuously improve the hiring experience through technology, automation, and user-focused design.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MISSION & VISION ============ -->
+    <section class="mv-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">MISSION &amp; VISION</span>
+                <h2 class="section-title">Mission &amp; Vision</h2>
+                <p class="section-desc">The north star that guides SkillGrid forward every day.</p>
+            </div>
+            <div class="mv-grid">
+                <div class="mv-card mission reveal">
+                    <div class="mv-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="mv-label">Our Mission</div>
+                    <h3>Empowering Meaningful Work</h3>
+                    <p>To empower professionals and businesses by creating meaningful opportunities through a secure and transparent freelance marketplace.</p>
+                    <div class="mv-deco"></div>
+                </div>
+                <div class="mv-card reveal">
+                    <div class="mv-icon"><i class="fas fa-eye"></i></div>
+                    <div class="mv-label">Our Vision</div>
+                    <h3>The World's Most Trusted Platform</h3>
+                    <p>To become the world's most trusted platform where skills, innovation, and opportunities come together for everyone.</p>
+                    <div class="mv-deco"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">OUR JOURNEY</span>
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-desc">A story of ambition, growth, and relentless innovation.</p>
+            </div>
+            <div class="timeline-wrap">
+
+                <div class="tl-item tl-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2022</span>
+                        <h3>SkillGrid Concept Created</h3>
+                        <p>The vision of a borderless freelance marketplace was born — sparked by the need for a more transparent and accessible platform.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2023</span>
+                        <h3>Platform Development Started</h3>
+                        <p>Our engineering and design teams came together to build the foundation of what would become SkillGrid's core marketplace.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-left">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2024</span>
+                        <h3>First 10,000 Registered Users</h3>
+                        <p>A major milestone — SkillGrid welcomed its first ten thousand freelancers and clients from 40+ countries worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-right">
+                    <div class="tl-dot"></div>
+                    <div class="tl-card">
+                        <span class="tl-year">2025</span>
+                        <h3>Global Freelancer Expansion</h3>
+                        <p>Expanded operations across 180+ countries with regional support, multi-currency payments, and localised onboarding flows.</p>
+                    </div>
+                </div>
+
+                <div class="tl-item tl-left future-item">
+                    <div class="tl-dot future"></div>
+                    <div class="tl-card">
+                        <span class="tl-year">Future</span>
+                        <h3>AI-Powered Smart Hiring</h3>
+                        <p>Next-generation AI matching, automated project management, and intelligent skill verification — coming soon.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ STATS — exact markup from index.html ============ -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-num" data-target="50">0</div>
+                    <div class="stat-num-suffix">K+</div>
+                    <div class="stat-label">Active Freelancers</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-num" data-target="120">0</div>
+                    <div class="stat-num-suffix">K+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-face-smile"></i></div>
+                    <div class="stat-num" data-target="98">0</div>
+                    <div class="stat-num-suffix">%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat-item reveal">
+                    <div class="stat-icon"><i class="fas fa-globe"></i></div>
+                    <div class="stat-num" data-target="180">0</div>
+                    <div class="stat-num-suffix">+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">MEET THE TEAM</span>
+                <h2 class="section-title">Meet Our Team</h2>
+                <p class="section-desc">The passionate people building the future of freelance work.</p>
+            </div>
+            <div class="team-grid">
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Ethan Parker</h3>
+                        <span class="team-role">Founder &amp; CEO</span>
+                        <p>Visionary entrepreneur with 12 years building tech platforms. Passionate about making talent borderless.</p>
+                    </div>
+                </div>
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <path d="M34 25 Q40 21 46 25" stroke="#00d9ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Sophia Martinez</h3>
+                        <span class="team-role">Product Manager</span>
+                        <p>Product strategist who translates user needs into seamless platform experiences. Data-driven and detail-obsessed.</p>
+                    </div>
+                </div>
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <rect x="34" y="35" width="12" height="6" rx="2" fill="rgba(0,217,255,.3)" stroke="#00d9ff" stroke-width="1"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Daniel Kim</h3>
+                        <span class="team-role">Lead Developer</span>
+                        <p>Full-stack architect with a love for scalable systems. Leads SkillGrid's engineering with precision and speed.</p>
+                    </div>
+                </div>
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <circle cx="47" cy="27" r="3" fill="rgba(0,217,255,.4)" stroke="#00d9ff" stroke-width="1"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Olivia Brown</h3>
+                        <span class="team-role">UI/UX Designer</span>
+                        <p>Crafts every pixel with intent. Olivia ensures SkillGrid feels premium, intuitive, and delightful to use.</p>
+                    </div>
+                </div>
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <path d="M36 26 L44 26 M40 23 L40 30" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Michael Johnson</h3>
+                        <span class="team-role">Marketing Director</span>
+                        <p>Brand storyteller and growth strategist. Michael has helped SkillGrid reach audiences in 180+ countries.</p>
+                    </div>
+                </div>
+
+                <div class="team-card reveal">
+                    <div class="team-avatar-wrap">
+                        <div class="team-avatar">
+                            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="40" cy="29" r="15" fill="rgba(0,217,255,.15)" stroke="#00d9ff" stroke-width="1.5"/>
+                                <circle cx="40" cy="29" r="9" fill="rgba(0,217,255,.25)"/>
+                                <path d="M35 30 Q40 34 45 30" stroke="#00d9ff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                                <ellipse cx="40" cy="64" rx="23" ry="13" fill="rgba(0,217,255,.10)" stroke="#00d9ff" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="team-socials">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Emma Wilson</h3>
+                        <span class="team-role">Community Manager</span>
+                        <p>The heart of SkillGrid's community. Emma fosters connections between freelancers and clients worldwide.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY SKILLGRID — reuses .features + .features-grid + .feature-card from style.css ============ -->
+    <section class="features why-section" id="why">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">WHY CHOOSE US</span>
+                <h2 class="section-title">Why Choose SkillGrid</h2>
+                <p class="section-desc">Built with trust, speed, and excellence at every layer.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Secure Payments</h3>
+                    <p>Every transaction is protected by escrow-based security. Pay only when you're satisfied with the work.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-user-check"></i></div>
+                    <h3>Verified Freelancers</h3>
+                    <p>All freelancers undergo identity, skill, and portfolio verification before going live on the platform.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is always available to resolve issues and guide you through every project.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Hiring Process</h3>
+                    <p>Find the right talent in minutes using smart filters, skill tags, and AI-assisted matching tools.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Global Talent Pool</h3>
+                    <p>Access over 50,000 vetted freelancers across every skill category, timezone, and industry vertical.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon"><i class="fas fa-diagram-project"></i></div>
+                    <h3>Smart Project Management</h3>
+                    <p>Manage milestones, deliverables, and communications all in one place with our built-in workspace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CULTURE GALLERY ============ -->
+    <section class="culture-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">OUR CULTURE</span>
+                <h2 class="section-title">Our Culture</h2>
+                <p class="section-desc">A glimpse into the people and moments that shape SkillGrid every day.</p>
+            </div>
+            <div class="culture-grid">
+                <div class="culture-item ci-large reveal">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80&auto=format&fit=crop" alt="Team collaboration" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="culture-item reveal">
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80&auto=format&fit=crop" alt="Remote working" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="culture-item reveal">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80&auto=format&fit=crop" alt="Strategy meeting" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="culture-item reveal">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80&auto=format&fit=crop" alt="Modern office" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="culture-item ci-wide reveal">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80&auto=format&fit=crop" alt="Product design" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+                <div class="culture-item reveal">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80&auto=format&fit=crop" alt="Team success" loading="lazy">
+                    <div class="culture-overlay"><i class="fas fa-expand"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-section reveal">
+        <div class="cta-inner">
+            <div class="cta-glow"></div>
+            <h2>Ready to Work with Top Talent?</h2>
+            <p>Discover skilled freelancers, launch your projects faster, and achieve outstanding results with SkillGrid.</p>
+            <div class="cta-buttons">
+                <a href="services.html" class="btn-dark">Browse Services <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn-dark-outline">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER — identical markup to index.html ============ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Connecting talented freelancers with amazing projects.
+                        Your success is our mission.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="seller-profile.html">Seller Profiles</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Content Writing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Wah Cantt, Punjab, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top — identical to index.html -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============ SCRIPTS — mirrors loader.js + main.js logic ============ -->
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+</html>

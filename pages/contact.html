@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact SkillGrid — Get in touch with our team. We're here to help you connect with world-class freelance talent.">
+    <meta name="theme-color" content="#0f0f23">
+
+    <title>Contact Us — SkillGrid</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../images/logo.svg">
+
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+
+    <!-- ============ LOADER ============ -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="../images/logo.svg" alt="SkillGrid" class="loader-logo">
+            <div class="loader-text">Skill<span>Grid</span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo" aria-label="SkillGrid home">
+                <img src="../images/logo.svg" alt="SkillGrid" class="logo-icon">
+                <span class="logo-text">Skill<span class="logo-accent">Grid</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="../index.html"       class="nav-link">Home</a>
+                <a href="services.html"       class="nav-link">Services</a>
+                <a href="seller-services.html" class="nav-link">Seller Services</a>
+                <a href="seller-profile.html" class="nav-link">Seller Profile</a>
+                <a href="about.html"          class="nav-link">About</a>
+                <a href="contact.html"        class="nav-link active">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Login</a>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="contact-hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&fm=webp');"></div>
+        <div class="hero-overlay"></div>
+
+        <!-- Floating decorative icons -->
+        <span class="float-icon fi-1"><i class="fas fa-envelope"></i></span>
+        <span class="float-icon fi-2"><i class="fas fa-phone"></i></span>
+        <span class="float-icon fi-3"><i class="fas fa-map-marker-alt"></i></span>
+        <span class="float-icon fi-4"><i class="fas fa-comments"></i></span>
+
+        <div class="container">
+            <div class="contact-hero-inner">
+                <div class="breadcrumb reveal">
+                    <a href="../index.html">Home</a>
+                    <span class="sep"><i class="fas fa-chevron-right"></i></span>
+                    <span class="cur">Contact</span>
+                </div>
+                <h1 class="hero-title reveal">
+                    Get in <span class="accent-text">Touch</span>
+                </h1>
+                <p class="hero-desc reveal">
+                    Have a question, project idea, or partnership in mind? We'd love to hear from you. Our team typically responds within 2 hours.
+                </p>
+                <div class="hero-badges reveal">
+                    <div class="hero-badge">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fast Response</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="hero-badge">
+                        <i class="fas fa-shield-halved"></i>
+                        <span>Secure & Private</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-cue">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ============ QUICK STATS BAR ============ -->
+    <section class="contact-stats-bar">
+        <div class="container">
+            <div class="stats-bar-grid reveal">
+                <div class="stats-bar-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>&lt; 2 Hours</strong>
+                        <span>Average Response Time</span>
+                    </div>
+                </div>
+                <div class="stats-bar-item">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <strong>180+ Countries</strong>
+                        <span>Global Support Coverage</span>
+                    </div>
+                </div>
+                <div class="stats-bar-item">
+                    <i class="fas fa-face-smile"></i>
+                    <div>
+                        <strong>98% Satisfaction</strong>
+                        <span>Client Happiness Rate</span>
+                    </div>
+                </div>
+                <div class="stats-bar-item">
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <strong>24/7 Available</strong>
+                        <span>Round-the-Clock Help</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAIN CONTACT SECTION ============ -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- ── LEFT: Contact Info ── -->
+                <div class="contact-info-col">
+
+                    <div class="reveal">
+                        <span class="section-tag">REACH US ANYTIME</span>
+                        <h2 class="contact-info-title">Let's Start a <span class="accent-text">Conversation</span></h2>
+                        <p class="contact-info-desc">
+                            Whether you're looking to hire talent, join as a freelancer, or just have a question — we're always here and ready to help.
+                        </p>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="info-cards">
+                        <div class="info-card reveal" data-delay="100">
+                            <div class="info-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h4>Email Address</h4>
+                                <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                                <a href="mailto:support@skillgrid.io">support@skillgrid.io</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card reveal" data-delay="200">
+                            <div class="info-card-icon">
+                                <i class="fab fa-whatsapp" style="color:#25d366"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer">+92 311 0897655</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card reveal" data-delay="300">
+                            <div class="info-card-icon">
+                                <i class="fas fa-location-dot"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h4>Office Location</h4>
+                                <span>Wah Cantt, Punjab, Pakistan</span>
+                            </div>
+                        </div>
+
+                        <div class="info-card reveal" data-delay="400">
+                            <div class="info-card-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-card-body">
+                                <h4>Business Hours</h4>
+                                <span>Mon – Fri: 9:00 AM – 6:00 PM PST</span>
+                                <span>Sat – Sun: Emergency support only</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social reveal">
+                        <p class="social-label">Follow us on social media</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" aria-label="Instagram" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" aria-label="LinkedIn" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" aria-label="GitHub" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── RIGHT: Contact Form ── -->
+                <div class="contact-form-col reveal">
+                    <div class="contact-form-card">
+                        <div class="form-card-header">
+                            <div class="form-card-icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <h3>Send us a Message</h3>
+                                <p>We'll get back to you within 2 hours</p>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contactForm" novalidate>
+
+                            <!-- Row 1: Name + Email -->
+                            <div class="form-row">
+                                <div class="form-group" id="nameGroup">
+                                    <label for="fullName">
+                                        <i class="fas fa-user"></i> Full Name
+                                    </label>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="text"
+                                            id="fullName"
+                                            name="fullName"
+                                            placeholder="e.g. John Smith"
+                                            autocomplete="name"
+                                            aria-required="true"
+                                        >
+                                        <span class="input-status-icon"></span>
+                                    </div>
+                                    <span class="field-error" id="nameError" role="alert"></span>
+                                </div>
+
+                                <div class="form-group" id="emailGroup">
+                                    <label for="emailAddress">
+                                        <i class="fas fa-envelope"></i> Email Address
+                                    </label>
+                                    <div class="input-wrap">
+                                        <input
+                                            type="email"
+                                            id="emailAddress"
+                                            name="emailAddress"
+                                            placeholder="e.g. john@example.com"
+                                            autocomplete="email"
+                                            aria-required="true"
+                                        >
+                                        <span class="input-status-icon"></span>
+                                    </div>
+                                    <span class="field-error" id="emailError" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Subject -->
+                            <div class="form-group" id="subjectGroup">
+                                <label for="subject">
+                                    <i class="fas fa-tag"></i> Subject
+                                </label>
+                                <div class="input-wrap">
+                                    <select id="subject" name="subject" aria-required="true">
+                                        <option value="">— Select a subject —</option>
+                                        <option value="hire">I want to hire a freelancer</option>
+                                        <option value="join">I want to join as a freelancer</option>
+                                        <option value="support">Technical support</option>
+                                        <option value="billing">Billing & payments</option>
+                                        <option value="partnership">Partnership inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <span class="input-status-icon select-arrow"><i class="fas fa-chevron-down"></i></span>
+                                </div>
+                                <span class="field-error" id="subjectError" role="alert"></span>
+                            </div>
+
+                            <!-- Row 3: Message -->
+                            <div class="form-group" id="messageGroup">
+                                <label for="message">
+                                    <i class="fas fa-comment-dots"></i> Message
+                                    <span class="char-count" id="charCount">0 / 1000</span>
+                                </label>
+                                <div class="input-wrap textarea-wrap">
+                                    <textarea
+                                        id="message"
+                                        name="message"
+                                        placeholder="Tell us about your project, question, or idea..."
+                                        rows="5"
+                                        maxlength="1000"
+                                        aria-required="true"
+                                    ></textarea>
+                                    <span class="input-status-icon"></span>
+                                </div>
+                                <span class="field-error" id="messageError" role="alert"></span>
+                            </div>
+
+                            <!-- Privacy checkbox -->
+                            <div class="form-group checkbox-group" id="privacyGroup">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacyCheck" name="privacy" aria-required="true">
+                                    <span class="custom-checkbox"></span>
+                                    <span class="checkbox-text">
+                                        I agree to the <a href="#" class="accent-link">Privacy Policy</a> and consent to SkillGrid processing my data.
+                                    </span>
+                                </label>
+                                <span class="field-error" id="privacyError" role="alert"></span>
+                            </div>
+
+                            <!-- Submit -->
+                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-spinner" aria-hidden="true"></span>
+                                <i class="fas fa-paper-plane btn-icon"></i>
+                            </button>
+
+                            <!-- Success / Error messages -->
+                            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+                                <i class="fas fa-circle-check"></i>
+                                <div>
+                                    <strong>Message sent successfully!</strong>
+                                    <p>We'll get back to you within 2 hours. Check your inbox for a confirmation.</p>
+                                </div>
+                            </div>
+
+                            <div class="form-error-global" id="formErrorGlobal" role="alert" aria-live="polite">
+                                <i class="fas fa-triangle-exclamation"></i>
+                                <span>Please fix the errors above and try again.</span>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ MAP SECTION ============ -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">OUR LOCATION</span>
+                <h2 class="section-title">Find Us Here</h2>
+                <p class="section-desc">Visit us at our office in Wah Cantt or reach us remotely from anywhere in the world.</p>
+            </div>
+
+            <div class="map-wrapper reveal">
+                <!-- Map overlay card -->
+                <div class="map-info-overlay">
+                    <div class="map-overlay-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <strong>SkillGrid HQ</strong>
+                        <span>Wah Cantt, Punjab, Pakistan</span>
+                    </div>
+                    <a
+                        href="https://www.google.com/maps/dir/?api=1&destination=Wah+Cantt+Punjab+Pakistan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary btn-directions"
+                    >
+                        <i class="fas fa-route"></i> Directions
+                    </a>
+                </div>
+
+                <!-- Live Google Map embed (San Francisco) -->
+                <iframe
+                    class="map-embed"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.4!2d72.7!3d33.77!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df958c47d02501%3A0x89f154f29f1f28a!2sWah%20Cantt%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                    width="100%"
+                    height="460"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="SkillGrid Office Location"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ SECTION ============ -->
+    <section class="contact-faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">QUICK ANSWERS</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Can't find what you're looking for? Send us a message above.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I hire a freelancer on SkillGrid?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply browse our services, find a freelancer that matches your needs, and click "Get Started" or "Contact" on their profile. You can also post a job listing and let freelancers come to you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How long does it take to get a response?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our support team typically responds within 2 hours during business hours (Mon–Fri, 9AM–6PM PST). For urgent issues, we recommend calling our support line directly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Is my payment information secure?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. All payments are processed through our secure escrow system. We use 256-bit SSL encryption and are PCI-DSS compliant. Your financial data is never stored on our servers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Can I become a freelancer on SkillGrid?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Click "Get Started" to create your freelancer profile. We review all applications to ensure quality, so please make sure your profile is complete with portfolio samples and verified skills.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What if I'm not happy with the delivered work?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer a satisfaction guarantee. If the work doesn't meet the agreed specifications, you can request unlimited revisions. If issues remain unresolved, our dispute resolution team will step in.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you offer enterprise or team plans?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we have tailored enterprise solutions for larger teams and organisations. Contact us via the form above or email us at <a href="mailto:enterprise@skillgrid.io" class="accent-link">enterprise@skillgrid.io</a> for a custom quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="contact-cta-section">
+        <div class="container">
+            <div class="contact-cta-inner reveal">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <span class="cta-eyebrow"><i class="fas fa-bolt"></i> Ready to start?</span>
+                    <h2>Your Next Great Project <span>Starts Here</span></h2>
+                    <p>Join over 50,000 professionals already using SkillGrid to build, grow, and deliver amazing work.</p>
+                    <div class="cta-buttons">
+                        <a href="services.html" class="btn btn-primary btn-lg">
+                            Browse Talent <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contactForm" class="btn btn-outline btn-lg">
+                            Get Started Free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../images/logo.svg" alt="SkillGrid">
+                        <span>Skill<span class="logo-accent">Grid</span></span>
+                    </a>
+                    <p class="footer-desc">
+                        Connecting talented freelancers with amazing projects.
+                        Your success is our mission.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Platform</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Browse Services</a></li>
+                        <li><a href="seller-profile.html">Seller Profiles</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="../index.html#how-it-works">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">Video Editing</a></li>
+                        <li><a href="services.html">Digital Marketing</a></li>
+                        <li><a href="services.html">Content Writing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-location-dot"></i>
+                            <span>Wah Cantt, Punjab, Pakistan</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:hello@skillgrid.io">hello@skillgrid.io</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923110897655" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" style="color:#25d366;margin-right:4px"></i>+92 311 0897655</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 SkillGrid Inc. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/loader.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
